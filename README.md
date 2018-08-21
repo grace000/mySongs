@@ -1,6 +1,6 @@
 # mySongs
 
-## What's This All About
+## What's This All About?
 
 mySongs is a Ruby on Rails app that lets users create personal playlists by saving YouTube URLs. Videos are embeded to the users' profile and can be played later.
 
