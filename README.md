@@ -4,12 +4,15 @@
 
 mySongs is a Ruby on Rails app that lets users create personal playlists by saving YouTube URLs. Videos are embeded to the users' profile and can be played later.
 
-
+```
 ![Login Page/Create New Profile](https://user-images.githubusercontent.com/21062007/44427594-9ed07700-a557-11e8-8987-916ca2065445.png)
-
+```
+```
 ![Profile](https://user-images.githubusercontent.com/21062007/44427666-d4756000-a557-11e8-8383-e016f6c0d966.png)
-
+```
+```
 ![Add Song](https://user-images.githubusercontent.com/21062007/44427737-025aa480-a558-11e8-98df-8363cc6fc78b.png)
+```
 
 ## Getting Started
 
