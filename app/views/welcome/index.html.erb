@@ -1,4 +1,46 @@
-<h2>Hello World</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
+<div class="section no-pad-bot cover yellow darken-3" id="index-banner">
+    <br/>
+    <br/>
+        <h1 class="header center welcome-header white-text">mySongs</h1>
+        <div class="row center white-text">
+            <h5 class="header col s12 light">Save your songs. Listen to them when you want!</h5>
+        </div>
+        <div class="row center">
+            <%= link_to 'Get Started', sign_in_path, :class => "btn-large waves-effect waves-light teal" %>
+        </div>
+    <br/>
+    <br/>
+</div>
+
+<div class="section container">
+   <!--Icon Section-->
+   <div class="row">
+      <div class="col s12 m4">
+         <div class="icon-block">
+            <h2 class="center red-text">
+               <i class="material-icons">group</i>
+            </h2>
+            <p class="center">Save the artist and name of the song </p>
+         </div>
+      </div>
+      <div class="col s12 m4">
+         <div class="icon-block">
+            <h2 class="center red-text">
+               <i class="material-icons">playlist_add</i>
+            </h2>
+            <p class="center">Submit a Youtube URL</p>
+         </div>
+      </div>
+      <div class="col s12 m4">
+         <div class="icon-block">
+            <h2 class="center red-text">
+               <i class="material-icons">music_video</i>
+            </h2>
+            <p class="center">Listen to your playlist when you want</p>
+         </div>
+      </div>
+   </div>
+</div>
+
+<br>
+<br>

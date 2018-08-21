@@ -1,0 +1,41 @@
+<div class="row">
+	<div class="col s12">
+		<br>
+		<%= link_to "+", new_post_path, 
+				:class => "right btn-floating btn-large waves-effect waves-light orange" %>
+		<h1>My Playlist</h1>
+	</div>
+</div>
+
+<div class="row">
+	<% @posts.each do |post| %>
+		<div class="col s10 m4"> 
+			<div class="card">
+				<div class="video-container">
+	          		<%= get_video_iframe(post.url) %>
+	        	</div>
+	        	<div class="card-content">
+	        		<h5><%= post.title %></h5>
+	          		<p><%= post.artist %></p>
+	        	</div>
+	        	<div class="card-action">
+	        		<div class="row">
+	        			<div class="col s6">
+	        				<%= link_to "EDIT", edit_post_path(post), :class => "orange-text" %>
+	        			</div>
+	        			<div class="col s6">
+	        				<%= link_to "DELETE", post_path(post),
+	        				:class => "red-text",
+							method: :delete,
+							data: {
+							confirm: "Are you sure you want to delete this song?" } %>
+	        			</div>
+	        		</div>
+	        		
+	        		
+	        	</div>
+			</div>
+		</div>
+	<% end %>
+</div>
+

@@ -1,0 +1,23 @@
+@import 'materialize';
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Roboto', 'Helvetica', Sans-Serif;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.welcome-header, 
+.home-logo {
+	font-family: 'Shrikhand', cursive;
+}
+
+.form-label {
+	font-size: 1.5em;
+}
+

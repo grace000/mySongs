@@ -1,0 +1,19 @@
+<div class="container">
+	<div id="clearance" class="sign-in">
+		<div id="flash">
+		    <% flash.each do |key, value| %>
+		        <div class="flash <%= key %>">
+		        	<script>document.getElementById('toast').innerHTML = 
+		        		M.toast({html: 'Bad Email or Password!', classes:'red'})
+		        	</script>
+		        </div>
+		    <% end %>
+		</div>
+		
+		<h2><%= t(".title") %></h2>
+
+		<%= render partial: '/sessions/form' %>
+
+		<div id="toast"></div>
+	</div>
+</div>

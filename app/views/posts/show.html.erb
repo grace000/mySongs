@@ -1,0 +1,41 @@
+<div class="container">
+	<h3>Looks Good?</h3>
+
+
+	<div class="post-actions">
+		
+	</div>
+
+	<div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-content">
+          <h4><%= @post.title %></h4>
+          <p><%= @post.artist %></p>
+          <p><%= @post.url %></p>
+        </div>
+        <div class="card-action">
+          <div class="row">
+			<div class="col">
+				<%= link_to "Back to Playlist", posts_path %>
+			</div>
+			<div class="col">
+				<%= link_to "Edit", edit_post_path(@post), :class => "btn btn-default" %>
+			</div>
+			<div class="col">
+				<%= button_to "Delete", post_path(@post), 
+				:class => "btn red",
+				method: :delete,
+				data: {
+				confirm: "Are you sure you want to delete this song?" } %>
+			</div>
+		</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+

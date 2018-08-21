@@ -1,0 +1,35 @@
+<div class="container">
+
+	<h1>Add Song</h1>
+
+	<% if @post.errors.any? %>
+		<% @post.errors.full_messages.each do |msg| %>
+			<div><%= msg %></div>
+		<% end %>
+		<br>
+	<% end %>
+
+
+	<%= form_for :post, url: posts_path do |f| %>
+		<div>
+			<%= f.label(:title, {:class => "form-label"})%>
+			<%= f.text_field(:title ,{:placeholder => "No Doubt"})%>
+		</div>
+
+		<div>
+			<%= f.label(:artist, {:class => "form-label"})%>
+			<%= f.text_field(:artist, {:placeholder => "Spider Webs"})%>
+		</div>
+
+		<div>
+			<%= f.label(:url, {:class => "form-label"})%>
+			<%= f.text_field(:url, {:placeholder => " example: https://www.youtube.com/watch?v=6ZktNItwexo"}) %>
+		</div>
+			
+		<div>
+			<%= f.submit({:class => "btn btn-primary"}) %>
+			<%= link_to "Cancel", posts_path, :class => "btn grey" %>
+		</div>
+	<% end %>
+
+</div> 

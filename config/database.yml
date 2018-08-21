@@ -78,11 +78,11 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
 production:
-  <<: *default
-  database: mysongs_production
-  username: mysongs
-  password: <%= ENV['MYSONGS_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+
+# production:
+#   <<: *default
+#   database: mysongs_production
+#   username: mysongs
+#   password: <%= ENV['MYSONGS_DATABASE_PASSWORD'] %>
