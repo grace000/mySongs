@@ -10,7 +10,7 @@
 	<% end %>
 
 
-	<%= form_for :post, url: posts_path do |f| %>
+	<%= form_for :post, url:posts_path do |f| %>
 		<div>
 			<%= f.label(:title, {:class => "form-label"})%>
 			<%= f.text_field(:title ,{:placeholder => "Spider Webs"})%>

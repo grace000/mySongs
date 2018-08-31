@@ -20,9 +20,9 @@ class PostsController < ApplicationController
 
 		if @post.save
 			#redirect to post which will load the show view
-			redirect_to posts_path, notice: "Song info stored!" 
+			flash[:notice] = "Song info stored!" 
+			redirect_to posts_path
 		else
-			@errors = @post.errors.full_messages
 			render :new
 		end
 	end
@@ -48,7 +48,8 @@ class PostsController < ApplicationController
 		redirect_to posts_path, notice: "Song info deleted!"
 	end
 
-	private def post_params
+	private
+	def post_params
 		params.require(:post).permit(:title, :url, :artist)
 	end 
 end

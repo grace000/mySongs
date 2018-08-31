@@ -7,6 +7,10 @@
 	</div>
 </div>
 
+<% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+
 <div class="row">
 	<% @posts.each do |post| %>
 		<div class="col s10 m4"> 
